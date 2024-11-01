@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avijit Pal 👋</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans">
+
+    <!-- Header / Home Section -->
+    <header class="bg-gradient-to-r from-teal-600 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center animate-fadeIn">
+            <img src="dummy-image.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-teal-500">
+            <h1 class="text-4xl font-bold mb-2">Hello, I'm Avijit</h1>
+            <p class="text-lg">Software Engineer specializing in modern web development with React and Next.js</p>
+            <a href="#contact" class="mt-6 inline-block bg-teal-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-teal-400">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800 animate-fadeIn">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-4 text-white">About Me</h2>
+            <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto">I’m a B.Tech graduate in Computer Science with a passion for creating dynamic and user-friendly web applications. My expertise lies in using React, Next.js, and ShadCN to build efficient, responsive sites. I love tackling new challenges and am continuously learning to expand my skill set.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-900 animate-fadeIn">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-white">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-purple-600 text-white px-4 py-2 rounded-lg">JavaScript</span>
+                <span class="bg-blue-600 text-white px-4 py-2 rounded-lg">React</span>
+                <span class="bg-teal-600 text-white px-4 py-2 rounded-lg">Next.js</span>
+                <span class="bg-indigo-600 text-white px-4 py-2 rounded-lg">Python</span>
+                <span class="bg-green-600 text-white px-4 py-2 rounded-lg">SQL</span>
+                <span class="bg-red-600 text-white px-4 py-2 rounded-lg">Tailwind CSS</span>
+                <span class="bg-yellow-600 text-white px-4 py-2 rounded-lg">Express</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-800 animate-fadeIn">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-8 text-white">Projects</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Project 1 -->
+                <div class="max-w-sm bg-gray-700 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-teal-400 mb-2">Learning Management System (LMS)</h3>
+                    <p class="text-gray-300 mb-4">A backend system with user authentication and data management, using Express, MongoDB, and JWT.</p>
+                    <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="max-w-sm bg-gray-700 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-purple-400 mb-2">Todo App</h3>
+                    <p class="text-gray-300 mb-4">A full-stack todo app built with Ruby on Rails and React, styled with Tailwind CSS.</p>
+                    <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="max-w-sm bg-gray-700 rounded-lg shadow-lg p-6 hover:scale-105 transform transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Chrome Extension for Tab Monitoring</h3>
+                    <p class="text-gray-300 mb-4">Chrome extension to monitor tabs and alert users about changes. Built using JavaScript and Chrome APIs.</p>
+                    <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-purple-700 to-blue-800 text-gray-100 text-center animate-fadeIn">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+            <p class="mb-6 text-gray-400">Feel free to reach out if you have any questions or would like to collaborate on a project!</p>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 rounded-lg text-gray-900" required>
+                <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 rounded-lg text-gray-900" required>
+                <textarea placeholder="Your Message" class="w-full p-3 mb-4 rounded-lg text-gray-900" rows="4" required></textarea>
+                <button type="submit" class="w-full bg-teal-500 text-white font-semibold py-3 rounded-lg hover:bg-teal-400">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-gray-500 text-center">
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
